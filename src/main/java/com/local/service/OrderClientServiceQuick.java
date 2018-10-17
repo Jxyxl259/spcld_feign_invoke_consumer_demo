@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 public interface OrderClientServiceQuick {
 
 
-    @RequestMapping(value = "/order/add", method = RequestMethod.POST, consumes={"application/json"}/*, produces={"application/json"}*/)
-    public String add(@RequestBody String order);
+    @RequestMapping(value = "/order/add", method = RequestMethod.POST, consumes={"text/html"}/*, produces={"application/json"}*/)
+    public String add(String order);
 
 
     @RequestMapping(value = "/order/detail", method=RequestMethod.POST, consumes={"application/json;charset=utf-8"}/*,produces={"application/json;charset=utf-8"}*/)
