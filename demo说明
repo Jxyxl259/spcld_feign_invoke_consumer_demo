@@ -1,0 +1,7 @@
+本项目模拟 feign 消费端
+order-provider 是 feign 服务端，
+需要起一个 Eureka 服务注册中心，将服务端注册上去，
+测试消费端是否可以调用的通，
+
+在满足 feign 调用方式的同时，服务端接口还要满足 PostMan 或者 HttpClient 的调用方式
+在 本项目的 OrderTestFeignController 中 每个方法上的调用底层原理都有注解解释

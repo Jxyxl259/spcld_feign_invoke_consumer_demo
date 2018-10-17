@@ -1,0 +1,13 @@
+server:
+  port: 8000
+
+
+
+eureka:
+  client:
+    # 因为是服务消费端，所以自己不能注册
+    register-with-eureka: false
+    service-url:
+      #defaultZone: http://10.1.135.112:18000/eureka/,http://10.1.135.113:18000/eureka/,http://10.1.135.114:18000/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/
+      #,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
